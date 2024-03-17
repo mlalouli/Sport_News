@@ -179,17 +179,7 @@
           value: 'Language',
         },
       ],
-    }),
-    
-
-    watch: {
-      group () {
-        this.drawer = false
-      },
-    },
-    data () {
-      return {
-        color: [
+      color: [
           '#fdfdfd'
         ],
         slides: [
@@ -203,7 +193,13 @@
           'Other sport',
           'Match reports',
         ],
-      }
+    }),
+    
+
+    watch: {
+      group () {
+        this.drawer = false
+      },
     },
   }
 </script>
