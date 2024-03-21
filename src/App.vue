@@ -105,7 +105,7 @@
         
   <v-card-text>
 
-          
+    <div style="background-color: red; width: 50%;margin-left: 25%;  ">      
   <v-sheet class="mx-auto" max-width="600">
     <v-slide-group show-arrows>
       <v-slide-group-item
@@ -127,6 +127,22 @@
     </v-slide-group>
   </v-sheet>
   
+
+
+    <v-carousel hide-delimiters  style="width: 80%;height: 30%; margin-left: 9%;">
+      <v-carousel-item
+      v-for="(item,i) in item"
+      :key="i"
+      :src="item.src"
+      cover
+      width="100%"
+      
+      > <div class="d-flex flex-column fill-height justify-center align-center text-white">
+        
+        <h3 class="Gt" data-testid="article-slide_title"  >Lescott: Who Id pick to help England win Euro 2024</h3>
+      </div></v-carousel-item>
+    </v-carousel>
+  </div>
   
 </v-card-text>
 <div style="height: 100%;width: 50%;background-color: #ff6b00; margin-left: 25%;">
@@ -193,6 +209,23 @@
           'Other sport',
           'Match reports',
         ],
+        item: [
+          {
+            src: 'https://uk1.sportal365images.com/process/smp-image-api/livescore.com/18032024/620b4100-40d2-4df3-a548-9d00d5d875a4.jpg?operations=fit(620:)&w=620&quality=100',
+          },
+          {
+            src: 'https://uk1.sportal365images.com/process/smp-image-api/livescore.com/18032024/2c63e784-126f-4049-b7fc-3f902d97bd0c.jpg?operations=fit(620:)&w=620&quality=100',
+          },
+          {
+            src: 'https://uk1.sportal365images.com/process/smp-image-api/livescore.com/18032024/7cd41289-670d-4946-a198-4692b729a20b.jpg?operations=fit(620:)&w=620&quality=100',
+          },
+        ],
+        news: [
+          'Lescott: Who Id pick to help England win Euro 2024',
+          'fgijbnijfg',
+
+          'fkvmofsmvo',
+        ],
     }),
     
 
@@ -203,6 +236,3 @@
     },
   }
 </script>
-
-
-
